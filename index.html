@@ -1,0 +1,139 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+	</head>
+	<body>
+
+<div class="container">
+			
+			<div class="home ">
+				<div class="row">
+					<div class="col-md-9">
+						<nav>
+							<ul class="nav nav-pills">
+							  <li><a href="#daily" data-key="daily">Daily</a></li>
+							  <li><a href="#weekly" data-key="weekly">Weekly</a></li>
+							  <li><a href="#monthly" data-key="monthly" >Monthly</a></li>
+							  <li><a href="#yearly" data-key="yearly">Yearly</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-md-3">
+						<a href="#" id="logout_btn" class="btn btn-danger pull-right">Logout</a>
+					</div>
+				</div>
+
+
+
+				<textarea  id="dailytext" data-key="daily" class="the_ta"></textarea>
+				
+				<textarea  id="weeklytext" data-key="weekly" class="the_ta"  style="display: none;"></textarea>
+				
+				<textarea  id="monthlytext" data-key="monthly" class="the_ta"  style="display: none;"></textarea>
+				
+				<textarea  id="yearlytext" data-key="yearly" class="the_ta"  style="display: none;"></textarea>
+				
+
+
+			</div>
+		
+			<div class="login">
+				
+				<div class="row ">
+
+					<div class="col-md-6 col-md-offset-3">
+						<div class="well well-lg">
+							<h1>Login</h1>
+
+							<form action="" id="login_form">
+								<div class="form-gruop">
+									<label for="email">Email</label>
+									<input type="text" placeholder="Email" id="email" class="form-control">
+								</div>
+								<div class="form-gruop">
+									<label for="password">Pass</label>
+									<input type="password" placeholder="Password" id="password" class="form-control">
+								</div>
+								<br>
+								<br>
+								<div class="form-group">
+									<label for=""></label>
+									<input type='submit'  class="btn btn-primary" value="Login"/ >
+									<br>
+									<br>
+
+									<a href="#" id="showRegForm">Not a user? Register</a>
+								</div>
+							</form>
+						</div>
+					</div>
+					
+				</div>
+
+
+			</div>
+
+			<div class="register ">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="well well-lg">
+							<h1>Register</h1>
+							<form action="" id="register_form">
+								<div class="form-gruop">
+									<label for="r_email">Email</label>
+									<input type="text" placeholder="Email" id="r_email" class="form-control">
+								</div>
+								<div class="form-gruop">
+									<label for="r_password">Pass</label>
+									<input type="password" placeholder="Password" id="r_password" class="form-control">
+								</div>
+								<br>
+								<br>
+								<div class="form-group">
+									<label for=""></label>
+									<input type="submit" class="btn btn-primary" value="Register"/>
+									<br>
+									<br>
+									<a href="#" id="showLoginForm">Already a user? Login</a>
+
+								</div>
+							</form>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			
+		</div> <!-- container -->
+		
+		<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
+		<script>
+		  // Initialize Firebase
+		  	var config = {
+		    apiKey: "",
+		    authDomain: "",
+		    databaseURL: "",
+		    projectId: "",
+		    storageBucket: "",
+		    messagingSenderId: ""
+		  };
+
+		  firebase.initializeApp(config);
+		  const auth = firebase.auth();
+		  const db = firebase.firestore();
+
+		  //
+		  db.settings({timestampsInSnapshots: true})
+		</script>
+		<script src="app.js"></script>
+
+	</body>
+</html>

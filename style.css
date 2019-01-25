@@ -1,0 +1,30 @@
+.the_ta {
+	width: 100%;
+	min-height: 90vh;
+}
+
+#logout_btn {
+	margin-top: 6px;
+}
+
+body {
+    background: linear-gradient(72deg,#1bb3eb 0%,#25efcb 100%)!important;
+	padding-bottom: 20px;
+}
+
+.nav-pills>li>a {
+	color: #fff;
+	font-size: 20px;
+}
+
+.nav-pills>li>a:active,
+.nav-pills>li>a:hover, 
+.nav-pills>li>.activ {
+	color: #1bb3eb;
+	background: #fff !important;
+	border-radius: 0 !important;
+}
+
+textarea{
+	padding: 20px;
+}
