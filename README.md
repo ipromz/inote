@@ -1,6 +1,10 @@
 # iNote
 An efficient tool to organise everything you what you want to do. 
 
+#Demo
+[Click Here](http://pramodjodhani.com/notes) to see the demo.
+
+
 **iNote** will help you achive more and do more by setting your daily, weekly, monthly and yearly goals. 
 
 iNote is:
