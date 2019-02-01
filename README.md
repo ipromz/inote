@@ -1,7 +1,7 @@
 # iNote
 An efficient tool to organise everything you what you want to do. 
 
-#Demo
+# Demo
 [Click Here](http://pramodjodhani.com/notes) to see the demo.
 
 
